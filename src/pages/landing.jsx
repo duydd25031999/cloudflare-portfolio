@@ -5,8 +5,6 @@ import HeroSection from "@/components/HeroSection.jsx";
 import AboutSection from "@/components/AboutSection.jsx";
 import StackSection from "@/components/StackSection.jsx";
 import ExperienceSection from "@/components/ExperienceSection.jsx";
-import ProjectSection from "@/components/ProjectSection.jsx";
-import TestimonialSection from "@/components/TestimonialSection.jsx";
 import ContactSection from "@/components/ContactSection.jsx";
 
 export default function LandingPage() {
@@ -18,8 +16,6 @@ export default function LandingPage() {
                 <AboutSection />
                 <StackSection />
                 <ExperienceSection />
-                <ProjectSection />
-                <TestimonialSection />
                 <ContactSection />
             </main>
             <Footer />

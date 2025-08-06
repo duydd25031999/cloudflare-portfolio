@@ -1,7 +1,45 @@
+import SectionLayout from './SectionLayout';
+import ExperienceCard from './ExperienceCard';
+
 export default function ExperienceSection() {
     return (
-        <section id="experience">
-            This is experience section
-        </section>
-    )
+        <SectionLayout id="experience" title="Experience" subtitle="Here is a quick summary of my most recent experiences:">
+            <div className="flex flex-col gap-6">
+                <ExperienceCard
+                    img="/upwork-logo.png"
+                    from="Nov 2021"
+                    to="Present"
+                    title="Sr. Frontend Developer"
+                    description={[
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Ut pretium arcu et massa semper, id fringilla leo semper.',
+                        'Sed quis justo ac magna.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    ]}
+                />
+                <ExperienceCard
+                    img="/upwork-logo.png"
+                    from="Jul 2017"
+                    to="Oct 2021"
+                    title="Team Lead"
+                    description={[
+                        'Sed quis justo ac magna.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Sed quis justo ac magna.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    ]}
+                />
+                <ExperienceCard
+                    img="/upwork-logo.png"
+                    from="Dec 2015"
+                    to="May 2017"
+                    title="Full Stack Developer"
+                    description={[
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    ]}
+                />
+            </div>
+        </SectionLayout>
+    );
 }
