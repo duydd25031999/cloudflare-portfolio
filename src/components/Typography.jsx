@@ -1,7 +1,7 @@
 // src/components/Typography.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
-import {TYPOGRAPHY_VARIANTS, FONT_WEIGHTS} from '@/utils/typography.config';
+import {TYPOGRAPHY_VARIANTS, FONT_WEIGHTS} from '@/utils/component.config.js';
 
 export default function Typography({
                                        tag = 'p',

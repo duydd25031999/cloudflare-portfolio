@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@/components/Typography"; // Adjust the import path as needed
-import { MapPin, CheckCircle } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Github, Twitter, Clipboard } from "lucide-react"; // example icons
 
 const HeroSection = () => {

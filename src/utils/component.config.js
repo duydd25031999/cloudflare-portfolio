@@ -1,4 +1,4 @@
-// src/utils/typography.config.js
+// src/utils/component.config.js
 
 export const TYPOGRAPHY_VARIANTS = {
     'heading-h1': `
@@ -36,6 +36,11 @@ export const TYPOGRAPHY_VARIANTS = {
   `,
 };
 
+export const LINK_VARIANTS = {
+    normal: 'underline',
+    menu: 'no-underline',
+}
+
 export const FONT_WEIGHTS = {
     400: 'font-normal',
     500: 'font-medium',
@@ -43,4 +48,3 @@ export const FONT_WEIGHTS = {
     700: 'font-bold',
 };
 
-export const DEFAULT_TEXT_COLOR = 'gray-900'
