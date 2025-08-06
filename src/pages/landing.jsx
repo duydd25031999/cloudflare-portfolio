@@ -1,5 +1,4 @@
 import React from "react";
-import Typography from "../components/Typography.jsx";
 import Header from "@/components/Header.jsx";
 
 export default function LandingPage() {
