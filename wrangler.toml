@@ -1,0 +1,13 @@
+name = "cloudflare-portfolio"
+compatibility_date = "2025-08-05"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Add any environment variables here if needed
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "npm run build"
+watch_dir = "src"
