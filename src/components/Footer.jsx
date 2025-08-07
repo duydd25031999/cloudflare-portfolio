@@ -7,36 +7,15 @@ const Footer = () => {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="w-full bg-background py-6">
-            <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-2 text-center lg:justify-between">
-                <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                    <IconWrapper className="text-base">
-                        <Copyright
-                        />
-                    </IconWrapper>
-                    <Typography tag="span">{year}</Typography>
-                </div>
-
-                <Typography
-                    tag="p"
-                    className="text-muted-foreground text-sm flex flex-wrap items-center gap-1"
-                >
-                    <Link
-                        href="https://your-site.com/design"
-                        className="underline underline-offset-2 hover:text-foreground"
-                    >
-                        Designed
-                    </Link>
-                    and
-                    <Link
-                        href="https://your-site.com/code"
-                        className="underline underline-offset-2 hover:text-foreground"
-                    >
-                        coded
-                    </Link>
-                    with
-                    <span className="text-red-500">❤️</span>
-                    by Sagar Shah
+        <footer className="bg-gray-50 dark:bg-graydark-50 py-6 px-2">
+            <div className="container mx-auto flex justify-center items-center gap-2">
+                <Copyright className="w-4 h-4" />
+                <Typography tag="p" variant="body3" className="text-gray-600 dark:text-graydark-600">
+                    {year} |{' '}
+                    <Link href="https://your-site.com/design">Designed</Link>{' '}
+                    and{' '}
+                    <Link href="https://your-site.com/code">coded</Link>{' '}
+                    coded with ❤️️ by Sagar Shah
                 </Typography>
             </div>
         </footer>

@@ -15,68 +15,73 @@ const ContactSection = () => {
     };
 
     return (
-        <SectionLayout id="contact" title="Get in touch" className="text-center">
-            <Typography tag="p" className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
-            </Typography>
-
+        <SectionLayout
+            id="contact"
+            title="Get in touch"
+            subtitle={
+                <span>
+                    What’s next? Feel free to reach out to me if you're looking for <br className="hidden lg:block" /> a developer, have a query, or simply want to connect.
+                </span>
+            }
+        >
             {/* Contact Info */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-6">
-                <div className="flex items-center gap-2 group">
-                    <Mail className="w-5 h-5 text-muted-foreground" />
+            <div className="relative flex flex-col gap-4 mb-12">
+                {/* Feedback */}
+                {copied && (
+                    <Typography
+                        tag="p"
+                        variant="body3"
+                        className="absolute top-0 left-1/2 -translate-x-1/2 text-green-500 transition-opacity">
+                        {`Copied ${copied} to clipboard!`}
+                    </Typography>
+                )}
+                <div className="flex justify-center items-center gap-5">
                     <Link
+                        variant="menu"
                         href="mailto:reachsagarshah@gmail.com"
-                        className="font-semibold text-lg hover:underline transition-all"
+                        className="flex items-center gap-5"
                     >
-                        reachsagarshah@gmail.com
+                        <Mail className="w-8 h-8" />
+                        <Typography tag="span" variant="heading-h2" weight={600}>reachsagarshah@gmail.com</Typography>
                     </Link>
-                    <Copy
-                        onClick={() => handleCopy('reachsagarshah@gmail.com')}
-                        className="w-5 h-5 cursor-pointer text-muted-foreground hover:text-primary transition-all"
-                    />
+                    <IconWrapper  onClick={() => handleCopy('reachsagarshah@gmail.com')}>
+                        <Copy/>
+                    </IconWrapper>
+
                 </div>
 
-                <div className="flex items-center gap-2 group">
-                    <Phone className="w-5 h-5 text-muted-foreground" />
+                <div className="flex justify-center items-center gap-5">
                     <Link
+                        variant="menu"
                         href="tel:+918980500565"
-                        className="font-semibold text-lg hover:underline transition-all"
+                        className="flex items-center gap-5"
                     >
-                        +91 8980500565
+                        <Phone className="w-8 h-8"  />
+                        <Typography tag="span" variant="heading-h2" weight={600}>+91 8980500565</Typography>
                     </Link>
-                    <Copy
-                        onClick={() => handleCopy('+918980500565')}
-                        className="w-5 h-5 cursor-pointer text-muted-foreground hover:text-primary transition-all"
-                    />
+                    <IconWrapper  onClick={() => handleCopy('+918980500565')}>
+                        <Copy/>
+                    </IconWrapper>
                 </div>
             </div>
 
-            {/* Social Links */}
-            <Typography tag="p" className="text-muted-foreground mb-4">
-                You may also find me on these platforms!
-            </Typography>
-            <div className="flex items-center justify-center gap-6">
-                <IconWrapper>
-                    <Link href="https://github.com/sagarshah">
-                        <Github className="w-5 h-5 hover:scale-110 transition-transform" />
-                    </Link>
-                </IconWrapper>
-                <IconWrapper>
-                    <Link href="https://twitter.com/sagarshah">
-                        <Twitter className="w-5 h-5 hover:scale-110 transition-transform" />
-                    </Link>
-                </IconWrapper>
-                <IconWrapper>
-                    <Link href="https://dev.to/sagarshah">
-                        <Figma className="w-5 h-5 hover:scale-110 transition-transform" />
-                    </Link>
-                </IconWrapper>
+            <div>
+                {/* Social Links */}
+                <Typography tag="p" variant="body2" className="mb-4 text-center text-gray-600 dark:text-graydark-600">
+                    You may also find me on these platforms!
+                </Typography>
+                <div className="flex items-center justify-center gap-1">
+                    <IconWrapper link="https://github.com/sagarshah">
+                        <Github />
+                    </IconWrapper>
+                    <IconWrapper link="https://twitter.com/sagarshah">
+                        <Twitter />
+                    </IconWrapper>
+                    <IconWrapper link="https://dev.to/sagarshah">
+                        <Figma />
+                    </IconWrapper>
+                </div>
             </div>
-
-            {/* Feedback */}
-            {copied && (
-                <p className="text-sm text-green-500 mt-4 transition-opacity">{`Copied ${copied} to clipboard!`}</p>
-            )}
         </SectionLayout>
     );
 };

@@ -3,10 +3,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {LINK_VARIANTS} from "@/utils/component.config.js";
 
-export default function Link({ href, variant = 'normal', children, className = '', ...props }) {
+const Link = React.forwardRef(({ href, target = '_blank', variant = 'normal', children, className = '', ...props }) => {
     return (
         <a
             href={href}
+            target={target}
             className={`
                 transition-colors duration-150 
                 text-gray-600 hover:text-gray-900 active:text-gray-600
@@ -18,7 +19,7 @@ export default function Link({ href, variant = 'normal', children, className = '
             {children}
         </a>
     )
-}
+})
 
 Link.propTypes = {
     href: PropTypes.string.isRequired,
@@ -26,3 +27,5 @@ Link.propTypes = {
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
 }
+
+export default Link;
