@@ -2,10 +2,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function IconWrapper({ className = '', children, ...props }) {
-
+const IconWrapper = React.forwardRef(({ link = '', className = '', children, ...props }, ref) => {
+    const Component = link ? 'a' : 'button';
     return (
-        <button
+        <Component
+            href={link || undefined}
             className={`
                 w-9 h-9 lg:w-11 lg:h-11 p-1.5 inline-flex items-center justify-center rounded-lg transition-colors duration-150 cursor-pointer
                 text-gray-600 dark:text-graydark-600
@@ -14,11 +15,13 @@ export default function IconWrapper({ className = '', children, ...props }) {
                 ${className}
         `} {...props}>
             {children}
-        </button>
+        </Component>
     )
-}
+})
 
 IconWrapper.propTypes = {
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
 }
+
+export default IconWrapper;

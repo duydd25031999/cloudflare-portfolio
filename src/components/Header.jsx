@@ -12,8 +12,8 @@ export default function Header() {
 
     const navItems = [
         { href: '#about', label: 'About' },
-        { href: '#work', label: 'Work' },
-        { href: '#testimonials', label: 'Testimonials' },
+        { href: '#stack', label: 'Skills' },
+        { href: '#experience', label: 'Experience' },
         { href: '#contact', label: 'Contact' },
     ]
 
@@ -36,7 +36,7 @@ export default function Header() {
     }
 
     return (
-        <header className="sticky top-0 z-5 py-4 backdrop-blur border-b border-white dark:border-gray-800">
+        <header className="sticky top-0 z-30 py-4 backdrop-blur border-b border-white dark:border-gray-800">
             <div className="container mx-auto flex justify-between items-center px-4 lg:px-8">
                 {/* Logo */}
                 <Link href="/" variant="menu" target="_self">
