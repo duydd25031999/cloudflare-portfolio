@@ -12,10 +12,8 @@ const Footer = () => {
                 <Copyright className="w-4 h-4" />
                 <Typography tag="p" variant="body3">
                     {year} |{' '}
-                    <Link href="https://your-site.com/design">Designed</Link>{' '}
-                    and{' '}
-                    <Link href="https://your-site.com/code">coded</Link>{' '}
-                    coded with ❤️️ by Sagar Shah
+                    <Link href="https://github.com/duydd25031999/cloudflare-portfolio">Developed</Link>{' '}
+                     with ❤️️ by Do Duc Duy
                 </Typography>
             </div>
         </footer>

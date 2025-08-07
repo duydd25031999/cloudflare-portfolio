@@ -45,7 +45,7 @@ export default function Header() {
                         className="text-gray-900 dark:text-white whitespace-nowrap text-4xl leading-none"
                         weight={700}
                     >
-                        &lt;SS /&gt;
+                        &lt;Dx3 /&gt;
                     </Typography>
                 </Link>
 

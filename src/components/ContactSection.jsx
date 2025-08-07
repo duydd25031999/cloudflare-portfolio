@@ -2,8 +2,8 @@ import Typography from '@/components/Typography';
 import Link from '@/components/Link';
 import SectionLayout from '@/components/SectionLayout';
 import IconWrapper from '@/components/IconWrapper';
-import { Mail, Phone, Copy, Github, Twitter, Figma } from 'lucide-react';
-import { useState } from 'react';
+import {Mail, Phone, Copy, Github, Facebook, Linkedin} from 'lucide-react';
+import React, { useState } from 'react';
 
 const ContactSection = () => {
     const [copied, setCopied] = useState(null);
@@ -31,20 +31,20 @@ const ContactSection = () => {
                     <Typography
                         tag="p"
                         variant="body3"
-                        className="absolute top-0 left-1/2 -translate-x-1/2 text-green-500 transition-opacity">
+                        className="absolute -top-5 left-1/2 -translate-x-1/2 text-green-500 transition-opacity">
                         {`Copied ${copied} to clipboard!`}
                     </Typography>
                 )}
                 <div className="flex justify-center items-center gap-5">
                     <Link
                         variant="menu"
-                        href="mailto:reachsagarshah@gmail.com"
+                        href="mailto:doducduy.vietnam@gmail.com"
                         className="flex items-center gap-5"
                     >
                         <Mail className="w-8 h-8" />
-                        <Typography tag="span" variant="heading-h2" weight={600}>reachsagarshah@gmail.com</Typography>
+                        <Typography tag="span" variant="heading-h2" weight={600}>doducduy.vietnam@gmail.com</Typography>
                     </Link>
-                    <IconWrapper  onClick={() => handleCopy('reachsagarshah@gmail.com')}>
+                    <IconWrapper  onClick={() => handleCopy('doducduy.vietnam@gmail.com')}>
                         <Copy/>
                     </IconWrapper>
 
@@ -53,13 +53,13 @@ const ContactSection = () => {
                 <div className="flex justify-center items-center gap-5">
                     <Link
                         variant="menu"
-                        href="tel:+918980500565"
+                        href="tel:+84947948155"
                         className="flex items-center gap-5"
                     >
                         <Phone className="w-8 h-8"  />
-                        <Typography tag="span" variant="heading-h2" weight={600}>+91 8980500565</Typography>
+                        <Typography tag="span" variant="heading-h2" weight={600}>+84 947948155</Typography>
                     </Link>
-                    <IconWrapper  onClick={() => handleCopy('+918980500565')}>
+                    <IconWrapper  onClick={() => handleCopy('+84947948155')}>
                         <Copy/>
                     </IconWrapper>
                 </div>
@@ -71,14 +71,14 @@ const ContactSection = () => {
                     You may also find me on these platforms!
                 </Typography>
                 <div className="flex items-center justify-center gap-1">
-                    <IconWrapper link="https://github.com/sagarshah">
-                        <Github />
+                    <IconWrapper link="https://github.com/duydd25031999">
+                        <Github/>
                     </IconWrapper>
-                    <IconWrapper link="https://twitter.com/sagarshah">
-                        <Twitter />
+                    <IconWrapper link="https://www.facebook.com/ducduy99hp">
+                        <Facebook />
                     </IconWrapper>
-                    <IconWrapper link="https://dev.to/sagarshah">
-                        <Figma />
+                    <IconWrapper link="https://www.linkedin.com/in/doducduy-vietnam/">
+                        <Linkedin />
                     </IconWrapper>
                 </div>
             </div>
