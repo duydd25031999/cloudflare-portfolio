@@ -31,9 +31,9 @@ const HeroSection = () => {
 
                     {/* Location and Availability */}
                     <div className="flex flex-col gap-2">
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 text-gray-800 dark:text-graydark-800">
                             <MapPin className="w-6 h-6" />
-                            <Typography tag="p" className="text-gray-800 dark:text-graydark-800">Ahmedabad, India</Typography>
+                            <Typography tag="p">Ahmedabad, India</Typography>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-6 h-6 flex justify-center items-center">

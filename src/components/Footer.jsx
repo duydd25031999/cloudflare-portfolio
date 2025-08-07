@@ -8,9 +8,9 @@ const Footer = () => {
 
     return (
         <footer className="bg-gray-50 dark:bg-graydark-50 py-6 px-2">
-            <div className="container mx-auto flex justify-center items-center gap-2">
+            <div className="container mx-auto flex justify-center items-center gap-2 text-gray-600 dark:text-graydark-600">
                 <Copyright className="w-4 h-4" />
-                <Typography tag="p" variant="body3" className="text-gray-600 dark:text-graydark-600">
+                <Typography tag="p" variant="body3">
                     {year} |{' '}
                     <Link href="https://your-site.com/design">Designed</Link>{' '}
                     and{' '}
