@@ -66,3 +66,41 @@ export const STACK_SKILLS = [
     { name: 'Storybook', src: '/stack/storybook.svg' },
     { name: 'Git', src: '/stack/git.svg' },
 ];
+
+export const EXPERIENCES_LIST = [
+    {
+        img: '/upwork.png',
+        from: 'Nov 2021',
+        to: 'Present',
+        title: 'Sr. Frontend Developer',
+        description: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Ut pretium arcu et massa semper, id fringilla leo semper.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        ],
+    },
+    {
+        img: '/upwork.png',
+        from: 'Jul 2017',
+        to: 'Oct 2021',
+        title: 'Team Lead',
+        description: [
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        ],
+    },
+    {
+        img: '/upwork.png',
+        from: 'Dec 2015',
+        to: 'May 2017',
+        title: 'Full Stack Developer',
+        description: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        ],
+    },
+];
+

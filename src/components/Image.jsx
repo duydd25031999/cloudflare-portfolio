@@ -1,11 +1,12 @@
 import React from "react";
 
 const Image = React.forwardRef(
-    ({ className = "", ...props }, ref) => {
+    ({ className = "", original = false , ...props }, ref) => {
+        const baseClass = original ? "" : "object-cover object-contain";
         return (
             <img
                 ref={ref}
-                className={`object-cover ${className}`}
+                className={`${baseClass} ${className}`}
                 {...props}
             />
         );

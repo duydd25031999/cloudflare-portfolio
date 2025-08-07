@@ -1,44 +1,26 @@
 import SectionLayout from './SectionLayout';
 import ExperienceCard from './ExperienceCard';
+import {EXPERIENCES_LIST} from "@/utils/component.config.js";
 
 export default function ExperienceSection() {
     return (
-        <SectionLayout id="experience" title="Experience" subtitle="Here is a quick summary of my most recent experiences:">
-            <div className="flex flex-col gap-6">
-                <ExperienceCard
-                    img="/upwork-logo.png"
-                    from="Nov 2021"
-                    to="Present"
-                    title="Sr. Frontend Developer"
-                    description={[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Ut pretium arcu et massa semper, id fringilla leo semper.',
-                        'Sed quis justo ac magna.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    ]}
-                />
-                <ExperienceCard
-                    img="/upwork-logo.png"
-                    from="Jul 2017"
-                    to="Oct 2021"
-                    title="Team Lead"
-                    description={[
-                        'Sed quis justo ac magna.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Sed quis justo ac magna.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    ]}
-                />
-                <ExperienceCard
-                    img="/upwork-logo.png"
-                    from="Dec 2015"
-                    to="May 2017"
-                    title="Full Stack Developer"
-                    description={[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    ]}
-                />
+        <SectionLayout
+            id="experience"
+            title="Experience"
+            subtitle="Here is a quick summary of my most recent experiences:"
+            className="bg-gray-50 dark:bg-graydark-50"
+        >
+            <div className="flex flex-col items-center gap-6">
+                {EXPERIENCES_LIST.map((exp, idx) => (
+                    <ExperienceCard
+                        key={idx}
+                        img={exp.img}
+                        from={exp.from}
+                        to={exp.to}
+                        title={exp.title}
+                        description={exp.description}
+                    />
+                ))}
             </div>
         </SectionLayout>
     );
