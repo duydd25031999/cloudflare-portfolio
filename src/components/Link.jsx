@@ -3,9 +3,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {LINK_VARIANTS} from "@/utils/component.config.js";
 
-const Link = React.forwardRef(({ href, target = '_blank', variant = 'normal', children, className = '', ...props }) => {
+const Link = React.forwardRef(({ href, target = '_blank', variant = 'normal', children, className = '', ...props }, ref) => {
     return (
         <a
+            ref={ref}
             href={href}
             target={target}
             className={`

@@ -5,6 +5,7 @@ import Button from './Button'
 import IconWrapper from './IconWrapper'
 import Typography from './Typography'
 import MobileSidebar from './MobileSidebar'
+import FileDownloadWrapper from "@/components/FileDownloadWrapper.jsx";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -52,7 +53,7 @@ export default function Header() {
                 {/* Desktop Nav */}
                 <div className="hidden lg:flex items-center gap-6">
                     {navItems.map((item) => (
-                        <Link key={item.href} href={item.href} variant="menu">
+                        <Link target="_self" key={item.href} href={item.href} variant="menu">
                             <Typography
                                 tag="span"
                                 variant="body2"
@@ -71,7 +72,13 @@ export default function Header() {
                     </IconWrapper>
 
                     {/* Button */}
-                    <Button>Download CV</Button>
+                    <FileDownloadWrapper
+                        href="/CV_DoDucDuy_FrontendDeveloper.pdf"
+                        download="CV_DoDucDuy_FrontendDeveloper.pdf"
+                        force
+                    >
+                        <Button>Download CV</Button>
+                    </FileDownloadWrapper>
                 </div>
 
                 {/* Mobile Menu Icon */}

@@ -4,6 +4,7 @@ import Link from './Link'
 import Button from './Button'
 import IconWrapper from './IconWrapper'
 import Typography from "@/components/Typography.jsx";
+import FileDownloadWrapper from "@/components/FileDownloadWrapper.jsx";
 
 export default function MobileSidebar({ open, setOpen, navItems, dark, toggleTheme }) {
     return (
@@ -48,7 +49,7 @@ export default function MobileSidebar({ open, setOpen, navItems, dark, toggleThe
                 {/* Navigation */}
                 <nav className="flex flex-col gap-4 border-t border-b border-gray-100 dark:border-graydark-100 p-4">
                     {navItems.map((item) => (
-                        <Link key={item.href} href={item.href} variant="menu">
+                        <Link onClick={() => setOpen(false)} target="_self" key={item.href} href={item.href} variant="menu">
                             {item.label}
                         </Link>
                     ))}
@@ -73,7 +74,13 @@ export default function MobileSidebar({ open, setOpen, navItems, dark, toggleThe
 
                     {/* Download button */}
                     <div className="mt-4">
-                        <Button className="w-full">Download CV</Button>
+                        <FileDownloadWrapper
+                            href="/CV_DoDucDuy_FrontendDeveloper.pdf"
+                            download="CV_DoDucDuy_FrontendDeveloper.pdf"
+                            force
+                        >
+                            <Button className="w-full">Download CV</Button>
+                        </FileDownloadWrapper>
                     </div>
                 </div>
             </div>
