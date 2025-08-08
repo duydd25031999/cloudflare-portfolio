@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection.jsx";
 import StackSection from "@/components/StackSection.jsx";
 import ExperienceSection from "@/components/ExperienceSection.jsx";
 import ContactSection from "@/components/ContactSection.jsx";
+import AwardSection from "@/components/AwardSection.jsx";
 
 export default function LandingPage() {
     return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
             <main className="flex flex-col">
                 <HeroSection />
                 <AboutSection />
+                <AwardSection />
                 <StackSection />
                 <ExperienceSection />
                 <ContactSection />

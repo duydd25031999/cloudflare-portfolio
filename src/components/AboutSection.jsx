@@ -2,7 +2,6 @@ import React from 'react'
 import Typography from '@/components/Typography'
 import SectionLayout from "@/components/SectionLayout.jsx";
 import Image from "@/components/Image.jsx";
-import Link from "@/components/Link.jsx";
 
 const AboutSection = () => {
     return (

@@ -49,22 +49,24 @@ export const FONT_WEIGHTS = {
 };
 
 export const STACK_SKILLS = [
-    { name: 'Javascript', src: '/icon-javscript.png' },
-    { name: 'Typescript', src: '/icon-typescript.png' },
-    { name: 'React', src: '/icon-react.png' },
-    { name: 'Next.js', src: '/icon-nextjs.png' },
+    { name: 'Javascript', level: 'proficient', src: '/icon-javscript.png' },
+    { name: 'Typescript', level: 'proficient', src: '/icon-typescript.png' },
+    { name: 'React', level: 'proficient', src: '/icon-react.png' },
+    { name: 'Next.js', level: 'knowledgeable',  src: '/icon-nextjs.png' },
+    { name: 'Vue', level: 'proficient', src: '/icon-vue.png' },
+    { name: 'Nuxt.js', level: 'knowledgeable',  src: '/icon-nuxt.png' },
     { name: 'Node.js', src: '/icon-nodejs.png' },
     { name: 'Express.js', src: '/icon-express.png' },
-    { name: 'Nest.js', src: '/icon-nest.png' },
     { name: 'Socket.io', src: '/icon-socket.png' },
-    { name: 'PostgreSQL', src: '/icon-postgresql.png' },
+    { name: 'My SQL', src: '/icon-mysql.png' },
     { name: 'MongoDB', src: '/icon-mongodb.png' },
-    { name: 'Sass/Scss', src: '/icon-sass.png' },
-    { name: 'Tailwindcss', src: '/icon-tailwindcss.png' },
+    // { name: 'HTML 5', level: 'knowledgeable', src: '/icon-html.png' },
+    // { name: 'CSS', level: 'proficient', src: '/icon-css.png' },
+    { name: 'Sass/Scss', level: 'knowledgeable', src: '/icon-sass.png' },
+    { name: 'Tailwindcss', level: 'knowledgeable', src: '/icon-tailwindcss.png' },
     { name: 'Figma', src: '/icon-figma.png' },
-    { name: 'Cypress', src: '/icon-cypress.png' },
-    { name: 'Storybook', src: '/icon-storybook.png' },
     { name: 'Git', src: '/icon-git.png' },
+    { name: 'Vite', src: '/icon-vite.png' },
 ];
 
 export const EXPERIENCES_LIST = [

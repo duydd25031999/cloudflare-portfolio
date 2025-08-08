@@ -23,6 +23,7 @@ const ContactSection = () => {
                     What’s next? Feel free to reach out to me if you're looking for <br className="hidden lg:block" /> a developer, have a query, or simply want to connect.
                 </span>
             }
+            className="bg-gray-50 dark:bg-graydark-50"
         >
             {/* Contact Info */}
             <div className="relative flex flex-col gap-4 mb-12">

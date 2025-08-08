@@ -8,7 +8,6 @@ export default function ExperienceSection() {
             id="experience"
             title="Experience"
             subtitle="Here is a quick summary of my most recent experiences:"
-            className="bg-gray-50 dark:bg-graydark-50"
         >
             <div className="flex flex-col items-center gap-6">
                 {EXPERIENCES_LIST.map((exp, idx) => (
