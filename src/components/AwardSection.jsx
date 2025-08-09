@@ -66,7 +66,7 @@ export default function AwardSection() {
         <SectionLayout
             id="education-award"
             title="Education & Award"
-            subtitle="Here are the things I have achieved during my time working on software."
+            subtitle="Here are the things I have achieved during my time studying and working on software."
         >
             {/* Timeline wrapper: left line on mobile, center line on lg */}
             <ul className="
