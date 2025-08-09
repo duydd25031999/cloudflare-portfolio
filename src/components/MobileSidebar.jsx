@@ -34,7 +34,7 @@ export default function MobileSidebar({ open, setOpen, navItems, dark, toggleThe
                             weight={700}
                             className="text-gray-900 dark:text-graydark-900"
                         >
-                            &lt;SS /&gt;
+                            &lt;Dx3 /&gt;
                         </Typography>
                     </Link>
                     <IconWrapper
