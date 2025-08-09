@@ -37,7 +37,7 @@ const data /*: AwardItem[] */ = [
     },
     {
         org: "FPT University",
-        role: null,
+        role: "Student",
         period: "September 2017 – June 2021",
         bullets: [
             <span key="major">

@@ -15,7 +15,7 @@ export default function MobileSidebar({ open, setOpen, navItems, dark, toggleThe
         >
             {/* Overlay */}
             <div
-                className="flex-1 bg-gray-900/10 dark:bg-graydark-900/10 backdrop-blur-sm"
+                className="flex-1 bg-black/70 backdrop-blur-3xl"
                 onClick={() => setOpen(false)}
             />
 
