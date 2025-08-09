@@ -22,7 +22,7 @@ export default function ProjectCard({ project, onClick }) {
             <Typography tag="p" variant="body3" className="mt-1 uppercase tracking-wide text-gray-500 dark:text-graydark-500 flex flex-col sm:flex-row gap-1 sm:gap-3">
                 <span>{project.role}</span>
                 <span className="hidden sm:block">•</span>
-                <span>{project.period.from} — {project.period.to}</span>
+                <span>{project.period.from} - {project.period.to}</span>
 
             </Typography>
 
