@@ -71,7 +71,7 @@ const HeroSection = () => {
                 >
                     <div className="relative shrink-0 w-[252px] h-[332px] lg:w-[252px] lg:h-[362px] transition-transform hover:-translate-y-1 duration-200">
                         <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 w-[252px] h-[312px] lg:w-[232px] lg:h-[342px] bottom-0 bg-gray-200 dark:bg-graydark-200"></div>
-                        <div className="absolute left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 top-0 z-20 bg-gray-50 p-1.5">
+                        <div className="absolute left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 top-0 z-20 bg-white dark:bg-gray-950 p-1.5">
                             <Image
                                 src="/Hero.png" // Replace with your actual image path
                                 alt="Duy's introduction"

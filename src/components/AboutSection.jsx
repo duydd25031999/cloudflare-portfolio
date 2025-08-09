@@ -16,7 +16,7 @@ const AboutSection = () => {
                 >
                     <div className="relative shrink-0 w-[322px] h-[392px] lg:w-[462px] lg:h-[602px] transition-transform hover:-translate-y-1 duration-200">
                         <div className="absolute left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-[322px] h-[372px] lg:w-[432px] lg:h-[572px] bottom-0 bg-gray-200 dark:bg-graydark-200"></div>
-                        <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 top-0 z-20 p-1.5 bg-gray-50 w-auto">
+                        <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 top-0 z-20 p-1.5 bg-gray-50 dark:bg-graydark-50 w-auto">
                             <Image
                                 src="/About.png" // Replace with your actual image path
                                 alt="Duy's About Me"

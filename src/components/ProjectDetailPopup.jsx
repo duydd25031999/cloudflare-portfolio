@@ -21,6 +21,7 @@ export default function ProjectDetailPopup({ project, open, onClose }) {
                 aria-modal="true"
                 className="
                   absolute left-1/2 top-1/2 w-[min(92vw,720px)] -translate-x-1/2 -translate-y-1/2
+                  max-h-[92vh] overflow-y-auto
                   rounded-xl border border-gray-400 dark:border-graydark-400
                   bg-gray-50 dark:bg-graydark-50
                   p-8
