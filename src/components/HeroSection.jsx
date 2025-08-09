@@ -73,7 +73,7 @@ const HeroSection = () => {
                         <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 w-[252px] h-[312px] lg:w-[232px] lg:h-[342px] bottom-0 bg-gray-200 dark:bg-graydark-200"></div>
                         <div className="absolute left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 top-0 z-20 bg-white dark:bg-gray-950 p-1.5">
                             <Image
-                                src="/Hero.png" // Replace with your actual image path
+                                src="/Hero.jpg" // Replace with your actual image path
                                 alt="Duy's introduction"
                                 className="min-w-[200px] w-[200px] h-[300px] lg:w-[220px] lg:h-[330px]"
                             />
