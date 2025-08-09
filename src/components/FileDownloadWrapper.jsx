@@ -30,7 +30,7 @@ const FileDownloadWrapper = React.forwardRef(
                 ref={ref}
                 href={href}
                 download={filename || ""}
-                className={className}
+                className={`cursor-zoom-in ${className}`}
                 onClick={handleClick}
             >
                 {children}

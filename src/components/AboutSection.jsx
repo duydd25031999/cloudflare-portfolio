@@ -14,9 +14,9 @@ const AboutSection = () => {
                     download="CV_DoDucDuy_FrontendDeveloper.pdf"
                     force
                 >
-                    <div className="relative shrink-0 w-[322px] h-[392px] lg:w-[462px] lg:h-[602px] transition-transform hover:-translate-y-1 duration-200">
+                    <div className="relative shrink-0 w-[322px] h-[392px] lg:w-[462px] lg:h-[602px]">
                         <div className="absolute left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-[322px] h-[372px] lg:w-[432px] lg:h-[572px] bottom-0 bg-gray-200 dark:bg-graydark-200"></div>
-                        <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 top-0 z-20 p-1.5 bg-gray-50 dark:bg-graydark-50 w-auto">
+                        <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 top-0 z-20 p-1.5 bg-gray-50 dark:bg-graydark-50 w-auto shadow-2xl hover:animate-scale-up">
                             <Image
                                 src="/About.png" // Replace with your actual image path
                                 alt="Duy's About Me"
@@ -39,7 +39,7 @@ const AboutSection = () => {
                         </Typography>
 
                         <Typography tag="p" variant="body2" className="text-gray-600 dark:text-graydark-600">
-                            My work spans across domains including E-commerce, Cloud Management, CRM, and AI Assistants. I’ve not only developed features but also delivered end-to-end solutions, handling client requests, estimating timelines, managing budgets, and resolving user issues. I’ve led front-end teams of 3–5 members, conducted technical interviews, and contributed to presale activities by providing architectural guidance and front-end strategy.
+                            My work spans across domains including E-commerce, Cloud Management, CRM, and AI Assistants. I’ve not only developed features but also delivered end-to-end solutions, handled client requests, estimated timelines, managed budgets, and resoled user issues. I’ve led front-end teams of 3–5 members, conducted technical interviews, and contributed to presale activities by providing architectural guidance and front-end strategy.
                         </Typography>
 
                         <Typography tag="p"  variant="body2" className="text-gray-600 dark:text-graydark-600">
