@@ -45,10 +45,11 @@ const ContactSection = () => {
                         <Mail className="w-8 h-8" />
                         <Typography tag="span" variant="heading-h2" weight={600}>doducduy.vietnam@gmail.com</Typography>
                     </Link>
-                    <IconWrapper  onClick={() => handleCopy('doducduy.vietnam@gmail.com')}>
-                        <Copy/>
-                    </IconWrapper>
-
+                    <div onClick={() => handleCopy('doducduy.vietnam@gmail.com')} className="hidden sm:block">
+                        <IconWrapper  >
+                            <Copy/>
+                        </IconWrapper>
+                    </div>
                 </div>
 
                 <div className="flex justify-center items-center gap-5">
@@ -60,9 +61,12 @@ const ContactSection = () => {
                         <Phone className="w-8 h-8"  />
                         <Typography tag="span" variant="heading-h2" weight={600}>+84 947948155</Typography>
                     </Link>
-                    <IconWrapper  onClick={() => handleCopy('+84947948155')}>
-                        <Copy/>
-                    </IconWrapper>
+                    <div onClick={() => handleCopy('+84947948155')} className="hidden sm:block">
+                        <IconWrapper>
+                            <Copy/>
+                        </IconWrapper>
+                    </div>
+
                 </div>
             </div>
 

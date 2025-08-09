@@ -47,7 +47,7 @@ export default function StackSection() {
                         <div
                             className="
                                 flex flex-col justify-center items-center text-center
-                                gap-2 w-28 h-28 md:w-32 md:h-32 bg-gray-50
+                                gap-2 w-28 h-28 md:w-32 md:h-32 bg-white
                                 rounded-2xl p-4
                                 shadow-md
                                 transition-transform

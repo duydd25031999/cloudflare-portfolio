@@ -70,15 +70,14 @@ export const STACK_SKILLS = [
 ];
 
 // Source: your CV markdown (projects)
-export const projects = [
+export const PROJECT_LIST = [
     {
         id: "bespin",
         name: "Bespin",
         role: "Front-end Developer",
         period: { from: "Dec 2024", to: "Present" },
-        client: "Bespin",
         summary:
-            "Cloud-native chatbot platform for DevOps/cloud engineers. LLM turns natural language into actionable server/AWS ops.",
+            "A cloud-native chatbot platform that helps DevOps and cloud engineers manage servers and AWS services via LLM AI model to transform natural language into right commands and actions.",
         responsibilities: [
             "Presale: analyze idea, high-level design, estimates, WBS",
             "Real-time Web Terminal for EC2 via AWS SSM + WebSocket",
@@ -88,10 +87,11 @@ export const projects = [
         ],
         achievements: [
             "Worked with WebSocket, LLM AI, AWS EC2",
+            "Presale process with analyzing client ideas and building high-level designs.",
             "Led FE in fast-changing startup",
             "Helped secure investment with technical demos",
         ],
-        tech: ["React", "WebSocket", "LLM", "AWS SSM", "AWS EC2"],
+        tech: ["WebSocket", "LLM", "Cloud-native", "Chatbot", "AWS EC2", "Presale consulting"],
         links: {},
     },
     {
@@ -99,9 +99,8 @@ export const projects = [
         name: "Cloud in One",
         role: "Front-end Developer",
         period: { from: "Nov 2023", to: "Dec 2024" },
-        client: "—",
         summary:
-            "Unified cloud management app integrating multiple providers into one monitoring & operations platform.",
+            "This project involves developing a cloud management application that integrates multiple providers into a single management system. This comprehensive solution allows users to manage various cloud services seamlessly from one platform. It offers features such as unified monitoring, resource allocation and performance tracking, ensuring efficient and streamlined cloud operations.",
         responsibilities: [
             "Develop features & fix bugs",
             "Maintain existing functions",
@@ -112,7 +111,7 @@ export const projects = [
             "Adapted to a large-scale system developed over ~4 years",
             "Applied TDD to improve reliability",
         ],
-        tech: [],
+        tech: ["Cloud management", "Large-scale system", "TDD practice"],
         links: {},
     },
     {
@@ -120,11 +119,10 @@ export const projects = [
         name: "Data Center Management",
         role: "Front-end Developer",
         period: { from: "Jun 2023", to: "Nov 2023" },
-        client: "Samsung",
         summary: "Internal system for managing & analyzing servers and cloud services.",
         responsibilities: ["UI/UX handling & edits", "New feature development", "Bug fixes"],
         achievements: [],
-        tech: [],
+        tech: ["Samsung SDS", "Data visualization"],
         links: {},
     },
     {
@@ -132,8 +130,7 @@ export const projects = [
         name: "Panasonic Vendor Management",
         role: "Front-end Developer",
         period: { from: "Jan 2023", to: "May 2023" },
-        client: "Panasonic",
-        summary: "Internal web app for managing vendor information.",
+        summary: "An internal web application of Panasonic Vietnam company. It manages and stores information about vendors.",
         responsibilities: [
             "Presale: idea analysis, high-level design, estimates, WBS",
             "Detail Design docs",
@@ -145,7 +142,7 @@ export const projects = [
             "Clear WBS & detail designs in presale",
             "Supported AWS S3 integration",
         ],
-        tech: ["AWS S3"],
+        tech: ["Presale analysis", "WBS planning", "Detail design", "Go-live", "AWS S3"],
         links: {},
     },
     {
@@ -153,9 +150,7 @@ export const projects = [
         name: "Project Requirement Management System",
         role: "Front-end Developer",
         period: { from: "Aug 2022", to: "Dec 2022" },
-        client: "Samsung",
-        summary:
-            "Web app for managing product requirements & test cases.",
+        summary: "A web application of Samsung company for managing Product requirement, Test case.",
         responsibilities: ["UI/UX handling & edits", "New feature development", "Bug fixes"],
         achievements: [],
         tech: [],
@@ -166,9 +161,7 @@ export const projects = [
         name: "Gempages Web Builder",
         role: "Front-end Developer",
         period: { from: "May 2021", to: "May 2022" },
-        client: "Gempages / Shopify ecosystem",
-        summary:
-            "Web builder application for Shopify with customers mainly in Europe.",
+        summary: "Web builder application for Shopify – E-commerce platform with customers mainly in Europe.",
         responsibilities: [
             "UI/UX handling & edits",
             "Feature development",
@@ -180,7 +173,7 @@ export const projects = [
             "Helped European users via live support",
             "Built strong product ownership mindset",
         ],
-        tech: [],
+        tech: ["Shopify", "E-commerce", "Web builder", "Customer support"],
         links: {},
     },
     {
@@ -190,7 +183,7 @@ export const projects = [
         period: { from: "Nov 2020", to: "Apr 2021" },
         client: "—",
         summary:
-            "Student housing platform: owners post rooms; students find rooms based on surrounding data.",
+            "Platform for finding and renting houses for college students. This is a web application for supporting the house owner to the public and posting their rooms for rent and students want to find room suits for their needs based on the surrounding data.",
         responsibilities: [
             "User research",
             "Project architecture design",
@@ -201,9 +194,10 @@ export const projects = [
         achievements: [
             "Initiated product via market research",
             "Designed full architecture & docs",
+            "Developed and tested features for a student housing platform.",
             "Delivered MVP from concept to release",
         ],
-        tech: [],
+        tech: ["Housing", "Market research", "Go-live", "Project Management"],
         links: {},
     },
     {
@@ -235,7 +229,7 @@ export const projects = [
 ];
 
 // helper to pick projects by id
-const pick = (ids) => projects.filter(p => ids.includes(p.id));
+const pick = (ids) => PROJECT_LIST.filter(p => ids.includes(p.id));
 
 export const EXPERIENCES_LIST = [
     {
@@ -262,7 +256,7 @@ export const EXPERIENCES_LIST = [
             "panasonic-vendor",
             "samsung-prms",
         ]),
-        logo: "/logos/cmc-global.png",
+        logo: "/logo-cmcg.webp",
     },
     {
         company: "Seal Commerce",
@@ -279,7 +273,7 @@ export const EXPERIENCES_LIST = [
             "Explored innovative ideas and POCs based on project requirements.",
         ],
         projects: pick(["gempages"]),
-        logo: "/logos/seal-commerce.png",
+        logo: "/logo-sealcommerce.png",
     },
     {
         company: "IMPL Vietnam",
@@ -295,11 +289,23 @@ export const EXPERIENCES_LIST = [
             "Deepened foundations in HTML, CSS, and JavaScript.",
         ],
         projects: pick([
-            "motelo",
             "soundid",
             "moneylab",
         ]),
-        logo: "/logos/impl.png",
+        logo: "/logo-impl.png",
+    },
+    {
+        company: "Freelance",
+        role: "Web Developer",
+        responsibilities: [
+            "Collaborate with clients to understand requirements, propose solutions, and ensure on-time, in-scope delivery.",
+            "Oversee the full development cycle to deliver scalable, maintainable, and user-friendly applications.",
+        ],
+        achievements: [
+            "Delivered successful projects across E-commerce, meeting both client goals and user needs.",
+            "Enhanced skills in front-end frameworks and presale consulting.",
+        ],
+        projects: pick(["motelo"]),
     },
 ];
 
