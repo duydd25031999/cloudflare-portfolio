@@ -54,7 +54,7 @@ const AboutSection = () => {
                             Finally, some quick bits about me.
                         </Typography>
 
-                        <ul className="grid grid-cols-2 gap-2.5 list-disc list-inside">
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 list-disc list-inside">
                             <Typography tag="li" variant="body2" className="text-gray-600 dark:text-graydark-600">B.E. in Software Engineering</Typography>
                             <Typography tag="li" variant="body2" className="text-gray-600 dark:text-graydark-600">End-to-end product thinking</Typography>
                             <Typography tag="li" variant="body2" className="text-gray-600 dark:text-graydark-600">Presale contributor</Typography>
