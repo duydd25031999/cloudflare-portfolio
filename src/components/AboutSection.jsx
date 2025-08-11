@@ -19,6 +19,8 @@ const AboutSection = () => {
                         <div className="absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 top-0 z-20 p-1.5 bg-gray-50 dark:bg-graydark-50 w-auto shadow-2xl hover:animate-scale-up">
                             <Image
                                 src="/About.png" // Replace with your actual image path
+                                width="420"
+                                optimize={true}
                                 alt="Duy's About Me"
                                 className="min-w-[270px] w-[270px] h-[360px] lg:w-[420px] lg:h-[560px]"
                             />

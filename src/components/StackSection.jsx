@@ -57,7 +57,11 @@ export default function StackSection() {
                             {
                                 getLevelIcon(skill)
                             }
-                            <Image src={skill.src} alt={skill.name} original={true} />
+                            <Image
+                                src={skill.src}
+                                alt={skill.name}
+                                original={true}
+                            />
                             <Typography
                                 tag="p"
                                 variant="body1"
