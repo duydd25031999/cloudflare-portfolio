@@ -78,6 +78,7 @@ const HeroSection = () => {
                             <Image
                                 src="/Hero.jpg" // Replace with your actual image path
                                 width="220"
+                                height="330"
                                 optimize={true}
                                 alt="Duy's introduction"
                                 className="min-w-[200px] w-[200px] h-[300px] lg:w-[220px] lg:h-[330px]"

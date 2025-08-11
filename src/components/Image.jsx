@@ -17,6 +17,11 @@ const Image = React.forwardRef(
                 ref={ref}
                 className={`${baseClass} ${className}`}
                 src={imgSrc}
+                width={width}
+                height={height}
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
                 {...props}
             />
         );

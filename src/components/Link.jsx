@@ -7,6 +7,7 @@ const Link = React.forwardRef(({ href, target = '_blank', variant = 'normal', ch
     return (
         <a
             ref={ref}
+            rel={target === '_blank' ? 'noopener noreferrer' : null}
             href={href}
             target={target}
             className={`

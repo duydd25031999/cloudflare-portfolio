@@ -20,6 +20,7 @@ const AboutSection = () => {
                             <Image
                                 src="/About.png" // Replace with your actual image path
                                 width="420"
+                                height="560"
                                 optimize={true}
                                 alt="Duy's About Me"
                                 className="min-w-[270px] w-[270px] h-[360px] lg:w-[420px] lg:h-[560px]"

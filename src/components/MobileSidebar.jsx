@@ -67,7 +67,7 @@ export default function MobileSidebar({ open, setOpen, navItems, dark, toggleThe
                             Switch Theme
                         </Typography>
                         {/* Theme Toggle */}
-                        <IconWrapper onClick={toggleTheme}>
+                        <IconWrapper aria-label="change-theme" onClick={toggleTheme}>
                             {dark ? (<Moon />) : (<Sun/>)}
                         </IconWrapper>
                     </div>

@@ -67,7 +67,7 @@ export default function Header() {
                     <div className="h-6 w-px bg-gray-100 dark:bg-graydark-100" />
 
                     {/* Theme Toggle */}
-                    <IconWrapper onClick={toggleTheme}>
+                    <IconWrapper aria-label="change-theme" onClick={toggleTheme}>
                         {isDark ? (<Moon />) : (<Sun/>)}
                     </IconWrapper>
 

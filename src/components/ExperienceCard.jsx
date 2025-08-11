@@ -76,6 +76,7 @@ export default function ExperienceCard({
                     <Image
                         src={logo}
                         width="128"
+                        height="auto"
                         optimize={true}
                         alt={`${company} logo`}
                         className="w-32 h-auto"
